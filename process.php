@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $regex_member = "/^\d{8}$/";
 
     if (!preg_match($regex_code, $booking_code)) {
-        $errors['booking_code'] = "Format: STU-HURUF (Contoh: STU-ROCK)";
+        $errors['booking_code'] = "Format: STU-HURUF (4 digit Contoh: STU-ROCK)";
     }
 
     if (!preg_match($regex_time, $session_time)) {

@@ -69,7 +69,7 @@
                     <div class="space-y-1">
                         <label class="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">ID Member</label>
                         <div class="relative">
-                            <input type="text" name="member_id"
+                            <input type="number" name="member_id"
                                 value="<?php echo htmlspecialchars($_POST['member_id'] ?? ''); ?>"
                                 class="w-full pl-4 pr-4 py-3 bg-slate-50 border rounded-xl outline-none transition-all duration-300
                                 <?php echo $errors['member_id'] ? 'border-red-400 focus:border-red-500 bg-red-50' : 'border-slate-200 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10'; ?>"
